@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Vitrine - Compétences en Programmation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="assets/videos/dd.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo en arrière-plan.
+        </video>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/dd.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+    
+    <button id="musicControlButton">🔊</button>
+    
+
+
+    <header>
+        <div class="container">
+            <h1>Bienvenue sur ma Vitrine</h1>
+            <p>Découvrez mes compétences en programmation et mes projets !</p>
+        </div>
+    </header>
+
+    <section id="competences">
+        <div class="container">
+            <h2>Mes Compétences</h2>
+            <div class="langages">
+                <div class="langage-card" data-lang="java">
+                    <h3>Java</h3>
+                    <p>Développement d'applications robustes.</p>
+                </div>
+                <div class="langage-card" data-lang="python">
+                    <h3>Python</h3>
+                    <p>Automatisation, data science et IA.</p>
+                </div>
+                <div class="langage-card" data-lang="csharp">
+                    <h3>C#</h3>
+                    <p>Développement de jeux et applications Windows.</p>
+                </div>
+                <div class="langage-card" data-lang="c">
+                    <h3>C</h3>
+                    <p>Programmation système et embarquée.</p>
+                </div>
+                <div class="langage-card" data-lang="kalilinux">
+                    <h3>Kali Linux</h3>
+                    <p>Sécurité informatique et tests de pénétration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reseaux">
+        <div class="container">
+            <h2>Mes Réseaux</h2>
+            <div class="reseaux-links">
+                <a href="https://discord.gg/dX5D36mQ" target="_blank" class="reseau-link discord">Discord</a>
+                <a href="https://www.youtube.com/@Toragp28" target="_blank" class="reseau-link youtube">YouTube</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <pre id="modal-code"></pre>
+            <button id="copy-button">Copier le code</button>
+        </div>
+    </div>
+
+
+    <button id="music-control" class="control-button">🔇</button>
+    <button id="play-pause-button" class="control-button">⏸️</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
